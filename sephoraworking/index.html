@@ -434,7 +434,7 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
     msgBox.textContent = "Submitting...";
 
     try {
-      const res = await fetch("/api/subscribe.php", {
+      const res = await fetch("/sephoraworking/api/subscribe.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email })
