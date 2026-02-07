@@ -1,5 +1,0 @@
-{
-  "name": "roger/fashion-hub",
-  "description": "Static site with PHP endpoint for Telegram form notifications",
-  "require": {}
-}
